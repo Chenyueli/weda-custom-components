@@ -63,10 +63,10 @@
   },
   "events": [{ "name": "onClick", "title": "点击" }],
   "meta": {
-    "title": "按钮",
-    "name": "Button",
-    "componentName": "Button",
-    "description": "按钮组件，兼容小程序和H5平台",
+    "title": "评分",
+    "name": "Rate",
+    "componentName": "Rate",
+    "description": "评分组件",
     "icon": "../icons/button.svg",
     "category": "表单",
     "componentOrder": 1

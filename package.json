@@ -17,10 +17,14 @@
   "license": "MIT",
   "description": "腾讯云微搭低代码组件库模板",
   "dependencies": {
+    "echarts": "^5.4.2",
+    "echarts-for-react": "^3.0.2",
     "gantt-task-react": "^0.3.9",
     "prop-types": "^15.7.2",
+    "react-error-boundary": "^3.1.4",
     "weui": "^2",
-    "react-error-boundary": "^3.1.4"
+    "tdesign-react": "^1.1.4",
+    "tea-component": "^2.7.9"
   },
   "peerDependencies": {
     "react": ">=18.0.0"

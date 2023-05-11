@@ -1,0 +1,46 @@
+{
+  "$schema": "https://comp-public-1303824488.cos.ap-shanghai.myqcloud.com/schema/lcds_component.json",
+  "data": {
+    "type": "object",
+    "properties": {
+      "setting": {
+        "title": "组件配置项",
+        "type": "object",
+        "description": "配置",
+        "x-category": "基础属性",
+        "default": {
+          "message": "消息提示",
+          "theme": "success",
+          "visible": true
+        },
+        "x-component": "jsontext",
+        "x-helper-text": "tea组件库 [组件说明文档](https://tea-design.github.io/component/alert)"
+      }
+    }
+  },
+  "events": [
+    {
+      "title": "onClose",
+      "name": "onClose",
+      "x-platforms": ["WEB"],
+      "detail": {
+        "data": {
+          "title": "task",
+          "type": "object"
+        }
+      }
+    }
+  ],
+  "meta": {
+    "name": "Alert",
+    "componentName": "Alert",
+    "title": "警告",
+    "description": "警告",
+    "icon": "../icons/Icon.svg",
+    "category": "图表",
+    "categoryOrder": 400,
+    "componentOrder": 250,
+    "platform": ["MOBILEWEB", "PCWEB"],
+    "visible": ["APP"]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "$schema": "https://comp-public-1303824488.cos.ap-shanghai.myqcloud.com/schema/lcds_component.json",
+  "data": {
+    "type": "object",
+    "properties": {
+      "theme": {
+        "title": "主题配置（theme)",
+        "type": "string",
+        "description": "主题dark",
+        "x-category": "基础属性",
+        "default": "auto",
+        "displayOrder": 1
+      },
+      "opts": {
+        "title": "Echart初始化参数（opts）",
+        "type": "object",
+        "description": "init(dom, theme, opts)",
+        "x-category": "高级属性",
+        "default": {
+          "renderer": "svg",
+          "locale": "ZH"
+        },
+        "x-component": "jsontext",
+        "x-helper-text": "可配置renderer渲染模式等，详见[图表初始化init手册-opts配置项](https://echarts.apache.org/zh/api.html#echarts.init)"
+      },
+      "option": {
+        "title": "图表配置项(Option)",
+        "type": "object",
+        "description": "配置",
+        "x-category": "基础属性",
+        "displayOrder": 2,
+        "default": {
+          "xAxis": {
+            "type": "category",
+            "boundaryGap": false,
+            "data": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+          },
+          "yAxis": {
+            "type": "value"
+          },
+          "series": [
+            {
+              "data": [820, 932, 901, 934, 1290, 1330, 1320],
+              "type": "line",
+              "label": {
+                "show": true
+              },
+              "areaStyle": {}
+            }
+          ]
+        },
+        "x-component": "jsontext",
+        "x-helper-text": "通用图表可配置多种Echart的图表，Option的type属性指定图表类型。您可以直接查看Echart官方图表示例，快速配置不同类型的图表。详见[图表配置项手册](https://echarts.apache.org/zh/option.html#title)"
+      }
+    }
+  },
+  "events": [
+    {
+      "title": "onClick",
+      "name": "onClick",
+      "x-platforms": ["WEB"],
+      "detail": {}
+    }
+  ],
+  "meta": {
+    "name": "Echarts",
+    "componentName": "Echarts",
+    "title": "通用Echarts图表",
+    "description": "警告",
+    "icon": "../icons/Icon.svg",
+    "category": "图表",
+    "categoryOrder": 400,
+    "componentOrder": 250,
+    "platform": ["MOBILEWEB", "PCWEB"],
+    "visible": ["APP"]
+  }
+}
